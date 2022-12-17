@@ -72,7 +72,7 @@ def receive():
 
     while True:
         client, address = server.accept()
-        key = str(address)
+        key = str(address[0])
         if key not in data:
             # создаем ячейку для хранения данных клиента
             data[key] = {
